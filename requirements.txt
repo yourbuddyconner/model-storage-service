@@ -1,0 +1,4 @@
+Flask
+flask-dynamo
+simplejson
+click

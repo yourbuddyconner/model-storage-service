@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  web:
+    build: ./
+    restart: always
+    environment:
+      - ENV=development
+      - AWS_ACCESS_KEY_ID=
+      - AWS_SECRET_ACCESS_KEY=
+      - AWS_REGION=us-west-1
+    volumes:
+      - ./:/app
+    ports:
+      - "8000:8000"
